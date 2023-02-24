@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BreeceWorks.TwilioCoreWebApi.props" />
+</Project>
