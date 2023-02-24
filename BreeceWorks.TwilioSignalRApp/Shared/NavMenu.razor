@@ -1,0 +1,52 @@
+﻿@inject BreeceWorks.TwilioSignalRApp.Services.TokenProvider TokenProvider
+
+
+<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">BreeceWorks.TwilioSignalRApp</a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+    <AuthorizeView>
+        <Authorized>
+            <NavLink class="list-group-item list-group-item-action bg-light"
+                     href="/" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Home
+            </NavLink>
+            <NavLink class="list-group-item list-group-item-action bg-light"
+                     href="/signalrmessaging">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Signal R
+            </NavLink>
+            @*<NavLink class="list-group-item list-group-item-action bg-light" href="Logout">
+            <span class="oi oi-list-rich" aria-hidden="true"></span> Log out
+            </NavLink>*@
+            <form action="/logoutidp" method="post">
+                <button class="nav-link btn btn-link" type="submit">
+                    <span class="oi oi-list-rich" aria-hidden="true"></span> Log out (@context.User.Identity.Name)
+                </button>
+                <input name="__RequestVerificationToken" type="hidden"
+                       value="@TokenProvider.XsrfToken">
+            </form>
+        </Authorized>
+        <NotAuthorized>
+            <NavLink class="list-group-item list-group-item-action bg-light" href="/loginidp">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Log in
+            </NavLink>
+        </NotAuthorized>
+    </AuthorizeView>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

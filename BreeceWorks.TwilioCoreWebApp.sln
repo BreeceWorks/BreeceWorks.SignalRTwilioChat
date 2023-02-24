@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BreeceWorks.Authentication", "BreeceWorks.Authentication\BreeceWorks.Authentication.csproj", "{BDF8611E-995A-4FB6-8C3F-97ECF49FF4F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreeceWorks.TwilioSignalRApp", "BreeceWorks.TwilioSignalRApp\BreeceWorks.TwilioSignalRApp.csproj", "{07F4498C-A31E-481B-8087-3C6402583A24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreeceWorks.TwilioCoreWebApi", "BreeceWorks.TwilioCoreWebApi\BreeceWorks.TwilioCoreWebApi.csproj", "{F9B77BBE-74EF-409E-8527-F56C2E7FDDF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDF8611E-995A-4FB6-8C3F-97ECF49FF4F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDF8611E-995A-4FB6-8C3F-97ECF49FF4F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDF8611E-995A-4FB6-8C3F-97ECF49FF4F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDF8611E-995A-4FB6-8C3F-97ECF49FF4F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07F4498C-A31E-481B-8087-3C6402583A24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07F4498C-A31E-481B-8087-3C6402583A24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07F4498C-A31E-481B-8087-3C6402583A24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07F4498C-A31E-481B-8087-3C6402583A24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9B77BBE-74EF-409E-8527-F56C2E7FDDF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9B77BBE-74EF-409E-8527-F56C2E7FDDF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9B77BBE-74EF-409E-8527-F56C2E7FDDF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9B77BBE-74EF-409E-8527-F56C2E7FDDF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {339DB434-FB37-4180-AA0A-64FED485DD81}
+	EndGlobalSection
+EndGlobal
