@@ -19,3 +19,4 @@ Version.cs
 Version.h
 Version.cpp
 *.cache
+/BreeceWorks.TwilioCoreWebApi/obj/Debug/net6.0/BreeceWorks.TwilioCoreWebApi.csproj.AssemblyReference.cache
