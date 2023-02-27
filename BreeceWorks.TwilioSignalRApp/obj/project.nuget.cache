@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ps4T1cYIpdjah+s4w1WEVManWiPRBrRHKqpSIdmOtFHT6FwBUMGko8TQxVfCszeuZvK82jGL+DIaxT19HD8RqA==",
+  "dgSpecHash": "C4GcwdXH6UJTdd8ygoa4brBYiO4g86P2lirylTpB61tmU2piSvsMoyAVbgLKgM0AWkjYh6U+ufTRVEppJCUPGQ==",
   "success": true,
-  "projectFilePath": "E:\\Documents\\Visual Studio 2022\\BreeceWorks.TwilioCoreWebApp\\BreeceWorks.TwilioSignalRApp\\BreeceWorks.TwilioSignalRApp.csproj",
+  "projectFilePath": "E:\\BreeceWorks\\BreeceWorks.SignalRTwilioChat\\BreeceWorks.TwilioSignalRApp\\BreeceWorks.TwilioSignalRApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\benja\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\benja\\.nuget\\packages\\identitymodel\\6.0.0\\identitymodel.6.0.0.nupkg.sha512",

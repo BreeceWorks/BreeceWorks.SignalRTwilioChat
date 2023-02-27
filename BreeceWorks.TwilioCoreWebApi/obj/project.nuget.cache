@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dj8KpUr5Er+upY4PiU8XFsHQT2UP7mjIiV/TBiwXOIN8pRY8PWDh87GBTHMPi97eFaBdWj8l0sy2b5HMlD1WAg==",
+  "dgSpecHash": "33Su8IHoN0HZwm4HALCvURZfv/7JxYgGPB335uULBeTT9TTRczM+v6ctfzlHG8vIdBLykAh38dYlhyyDkGb5zg==",
   "success": true,
-  "projectFilePath": "E:\\Documents\\Visual Studio 2022\\BreeceWorks.TwilioCoreWebApp\\BreeceWorks.TwilioCoreWebApi\\BreeceWorks.TwilioCoreWebApi.csproj",
+  "projectFilePath": "E:\\BreeceWorks\\BreeceWorks.SignalRTwilioChat\\BreeceWorks.TwilioCoreWebApi\\BreeceWorks.TwilioCoreWebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\benja\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\benja\\.nuget\\packages\\identitymodel\\6.0.0\\identitymodel.6.0.0.nupkg.sha512",

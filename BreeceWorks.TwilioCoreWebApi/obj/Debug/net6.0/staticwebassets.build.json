@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qyWWzdNzw5Tc1lckkH+QD2zAxjNrCjeWGc4xD4TA1EY=",
+  "Hash": "+PGtRjaKjMQFz/mZ2Zk9MeawxRy95Os6L8JC54l5ZiQ=",
   "Source": "BreeceWorks.TwilioCoreWebApi",
   "BasePath": "_content/BreeceWorks.TwilioCoreWebApi",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BreeceWorks.TwilioCoreWebApi\\wwwroot",
       "Source": "BreeceWorks.TwilioCoreWebApi",
-      "ContentRoot": "E:\\Documents\\Visual Studio 2022\\BreeceWorks.TwilioCoreWebApp\\BreeceWorks.TwilioCoreWebApi\\wwwroot\\",
+      "ContentRoot": "E:\\BreeceWorks\\BreeceWorks.SignalRTwilioChat\\BreeceWorks.TwilioCoreWebApi\\wwwroot\\",
       "BasePath": "_content/BreeceWorks.TwilioCoreWebApi",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "E:\\Documents\\Visual Studio 2022\\BreeceWorks.TwilioCoreWebApp\\BreeceWorks.TwilioCoreWebApi\\wwwroot\\App_Data\\MEd2f753c65b4506933b0482b356222ae1.jpg",
+      "Identity": "E:\\BreeceWorks\\BreeceWorks.SignalRTwilioChat\\BreeceWorks.TwilioCoreWebApi\\wwwroot\\App_Data\\MEd2f753c65b4506933b0482b356222ae1.jpg",
       "SourceId": "BreeceWorks.TwilioCoreWebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Documents\\Visual Studio 2022\\BreeceWorks.TwilioCoreWebApp\\BreeceWorks.TwilioCoreWebApi\\wwwroot\\",
+      "ContentRoot": "E:\\BreeceWorks\\BreeceWorks.SignalRTwilioChat\\BreeceWorks.TwilioCoreWebApi\\wwwroot\\",
       "BasePath": "_content/BreeceWorks.TwilioCoreWebApi",
       "RelativePath": "App_Data/MEd2f753c65b4506933b0482b356222ae1.jpg",
       "AssetKind": "All",

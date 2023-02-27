@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YiUN6sCH6d9F4SQK5Dd2ZU4jKwxPNwNzAdTR13PqIYlglEhwZUQOAOu83iVXJfATHXKnIk6HMHMTsRc6qa+alQ==",
+  "dgSpecHash": "uwAVW+Q/KGU0xgY29McVpsxFCHY0e3JCMvQQBBvqXlIHFafgDCjQ/0qBn5ulMCs5kUNx6v7O7oPNK/YcnOOBFQ==",
   "success": true,
-  "projectFilePath": "E:\\Documents\\Visual Studio 2022\\BreeceWorks.TwilioCoreWebApp\\BreeceWorks.Authentication\\BreeceWorks.Authentication.csproj",
+  "projectFilePath": "E:\\BreeceWorks\\BreeceWorks.SignalRTwilioChat\\BreeceWorks.Authentication\\BreeceWorks.Authentication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\benja\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\benja\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

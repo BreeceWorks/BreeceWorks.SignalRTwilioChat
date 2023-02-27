@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Documents\\Visual Studio 2022\\BreeceWorks.TwilioCoreWebApp\\BreeceWorks.TwilioCoreWebApi\\BreeceWorks.TwilioCoreWebApi.csproj": {}
+    "E:\\BreeceWorks\\BreeceWorks.SignalRTwilioChat\\BreeceWorks.TwilioCoreWebApi\\BreeceWorks.TwilioCoreWebApi.csproj": {}
   },
   "projects": {
-    "E:\\Documents\\Visual Studio 2022\\BreeceWorks.TwilioCoreWebApp\\BreeceWorks.Authentication\\BreeceWorks.Authentication.csproj": {
+    "E:\\BreeceWorks\\BreeceWorks.SignalRTwilioChat\\BreeceWorks.Authentication\\BreeceWorks.Authentication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Documents\\Visual Studio 2022\\BreeceWorks.TwilioCoreWebApp\\BreeceWorks.Authentication\\BreeceWorks.Authentication.csproj",
+        "projectUniqueName": "E:\\BreeceWorks\\BreeceWorks.SignalRTwilioChat\\BreeceWorks.Authentication\\BreeceWorks.Authentication.csproj",
         "projectName": "BreeceWorks.Authentication",
-        "projectPath": "E:\\Documents\\Visual Studio 2022\\BreeceWorks.TwilioCoreWebApp\\BreeceWorks.Authentication\\BreeceWorks.Authentication.csproj",
+        "projectPath": "E:\\BreeceWorks\\BreeceWorks.SignalRTwilioChat\\BreeceWorks.Authentication\\BreeceWorks.Authentication.csproj",
         "packagesPath": "C:\\Users\\benja\\.nuget\\packages\\",
-        "outputPath": "E:\\Documents\\Visual Studio 2022\\BreeceWorks.TwilioCoreWebApp\\BreeceWorks.Authentication\\obj\\",
+        "outputPath": "E:\\BreeceWorks\\BreeceWorks.SignalRTwilioChat\\BreeceWorks.Authentication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -84,14 +84,14 @@
         }
       }
     },
-    "E:\\Documents\\Visual Studio 2022\\BreeceWorks.TwilioCoreWebApp\\BreeceWorks.TwilioCoreWebApi\\BreeceWorks.TwilioCoreWebApi.csproj": {
+    "E:\\BreeceWorks\\BreeceWorks.SignalRTwilioChat\\BreeceWorks.TwilioCoreWebApi\\BreeceWorks.TwilioCoreWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Documents\\Visual Studio 2022\\BreeceWorks.TwilioCoreWebApp\\BreeceWorks.TwilioCoreWebApi\\BreeceWorks.TwilioCoreWebApi.csproj",
+        "projectUniqueName": "E:\\BreeceWorks\\BreeceWorks.SignalRTwilioChat\\BreeceWorks.TwilioCoreWebApi\\BreeceWorks.TwilioCoreWebApi.csproj",
         "projectName": "BreeceWorks.TwilioCoreWebApi",
-        "projectPath": "E:\\Documents\\Visual Studio 2022\\BreeceWorks.TwilioCoreWebApp\\BreeceWorks.TwilioCoreWebApi\\BreeceWorks.TwilioCoreWebApi.csproj",
+        "projectPath": "E:\\BreeceWorks\\BreeceWorks.SignalRTwilioChat\\BreeceWorks.TwilioCoreWebApi\\BreeceWorks.TwilioCoreWebApi.csproj",
         "packagesPath": "C:\\Users\\benja\\.nuget\\packages\\",
-        "outputPath": "E:\\Documents\\Visual Studio 2022\\BreeceWorks.TwilioCoreWebApp\\BreeceWorks.TwilioCoreWebApi\\obj\\",
+        "outputPath": "E:\\BreeceWorks\\BreeceWorks.SignalRTwilioChat\\BreeceWorks.TwilioCoreWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -115,8 +115,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Documents\\Visual Studio 2022\\BreeceWorks.TwilioCoreWebApp\\BreeceWorks.Authentication\\BreeceWorks.Authentication.csproj": {
-                "projectPath": "E:\\Documents\\Visual Studio 2022\\BreeceWorks.TwilioCoreWebApp\\BreeceWorks.Authentication\\BreeceWorks.Authentication.csproj"
+              "E:\\BreeceWorks\\BreeceWorks.SignalRTwilioChat\\BreeceWorks.Authentication\\BreeceWorks.Authentication.csproj": {
+                "projectPath": "E:\\BreeceWorks\\BreeceWorks.SignalRTwilioChat\\BreeceWorks.Authentication\\BreeceWorks.Authentication.csproj"
               }
             }
           }
