@@ -8,8 +8,8 @@ _ReSharper.*/
 *.sdf
 bin/
 obj/
-Debug/
-Release/
+Debug/*
+Release/*
 *.opensdf
 *.tlog
 *.log
