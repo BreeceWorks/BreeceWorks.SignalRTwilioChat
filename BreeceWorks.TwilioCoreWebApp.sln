@@ -5,9 +5,9 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BreeceWorks.Authentication", "BreeceWorks.Authentication\BreeceWorks.Authentication.csproj", "{BDF8611E-995A-4FB6-8C3F-97ECF49FF4F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreeceWorks.TwilioSignalRApp", "BreeceWorks.TwilioSignalRApp\BreeceWorks.TwilioSignalRApp.csproj", "{07F4498C-A31E-481B-8087-3C6402583A24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BreeceWorks.TwilioSignalRApp", "BreeceWorks.TwilioSignalRApp\BreeceWorks.TwilioSignalRApp.csproj", "{07F4498C-A31E-481B-8087-3C6402583A24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreeceWorks.TwilioCoreWebApi", "BreeceWorks.TwilioCoreWebApi\BreeceWorks.TwilioCoreWebApi.csproj", "{F9B77BBE-74EF-409E-8527-F56C2E7FDDF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BreeceWorks.TwilioCoreWebApi", "BreeceWorks.TwilioCoreWebApi\BreeceWorks.TwilioCoreWebApi.csproj", "{F9B77BBE-74EF-409E-8527-F56C2E7FDDF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

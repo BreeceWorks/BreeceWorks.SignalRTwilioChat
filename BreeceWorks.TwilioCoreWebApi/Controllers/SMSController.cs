@@ -38,12 +38,17 @@ namespace BreeceWorks.TwilioCoreWebApi.Controllers
 
             TwilioClient.Init(accountSid, authToken);
 
-            var sentMessage = MessageResource.Create(
+            MessageResource sentMessage = MessageResource.Create(
                 body: message,
                 from: new Twilio.Types.PhoneNumber(fromNumber),
-                to: new Twilio.Types.PhoneNumber(toNmber)
+                to: new Twilio.Types.PhoneNumber(toNmber),
+            statusCallback: new Uri(_configuration["Twilio:StatusCallbackUrl"])
             );
+
+            LogMessageResource("Outgoing", sentMessage);
         }
+
+        
 
         private const string SavePath = @"\App_Data\";
 
@@ -51,6 +56,7 @@ namespace BreeceWorks.TwilioCoreWebApi.Controllers
         [ValidateTwilioRequest]
         public async Task<TwiMLResult> Incoming([FromForm] SmsRequest request, [FromForm] int numMedia)
         {
+            LogSMSRequest("SMS Incoming", request);
             await SaveImages(numMedia);
 
             var response = new MessagingResponse();
@@ -58,6 +64,70 @@ namespace BreeceWorks.TwilioCoreWebApi.Controllers
             RelayMessageToChat(request);
 
             return TwiML(response);
+        }
+
+        [HttpPost(Name = "sms_status_callback")]
+        [ValidateTwilioRequest]
+        public TwiMLResult sms_status_callback([FromForm] SmsRequest request)
+        {
+            
+            LogSMSRequest("SMS Status Callback", request);
+
+            var response = new MessagingResponse();
+
+
+
+            return TwiML(response);
+        }
+
+        private static void LogSMSRequest(String description, SmsRequest request)
+        {
+            Debug.WriteLine(description);
+            Debug.WriteLine("SMS SID: " + request.SmsSid);
+            Debug.WriteLine("Message Status: " + request.MessageStatus);
+            Debug.WriteLine("Account SID: " + request.AccountSid);
+            Debug.WriteLine("From: " + request.From);
+            Debug.WriteLine("TO: " + request.To);
+            Debug.WriteLine("Body: " + request.Body);
+            Debug.WriteLine("Opt Out Type: " + request.OptOutType);
+            Debug.WriteLine("Messaging Service SID: " + request.MessagingServiceSid);
+            Debug.WriteLine("From City: " + request.FromCity);
+            Debug.WriteLine("From State: " + request.FromState);
+            Debug.WriteLine("From Zip: " + request.FromZip);
+            Debug.WriteLine("From Country: " + request.FromCountry);
+            Debug.WriteLine("To City: " + request.ToCity);
+            Debug.WriteLine("To State: " + request.ToState);
+            Debug.WriteLine("To Zip: " + request.ToZip);
+            Debug.WriteLine("To Country: " + request.ToCountry);
+        }
+
+        private void LogMessageResource(String description, MessageResource sentMessage)
+        {
+            Debug.WriteLine(description);
+            Debug.WriteLine("SID: " + sentMessage.Sid);
+            Debug.WriteLine("Account SID: " + sentMessage.AccountSid);
+            Debug.WriteLine("API Version: " + sentMessage.ApiVersion);
+            Debug.WriteLine("Body: " + sentMessage.Body);
+            Debug.WriteLine("Date Created: " + sentMessage.DateCreated);
+            Debug.WriteLine("Date Sent: " + sentMessage.DateSent);
+            Debug.WriteLine("Date Updated: " + sentMessage.DateUpdated);
+            Debug.WriteLine("Direction: " + sentMessage.Direction);
+            Debug.WriteLine("Error Code: " + sentMessage.ErrorCode);
+            Debug.WriteLine("Num Media: " + sentMessage.NumMedia);
+            Debug.WriteLine("Error Message: " + sentMessage.ErrorMessage);
+            Debug.WriteLine("From: " + sentMessage.From);
+            Debug.WriteLine("Messaging Service Sid: " + sentMessage.MessagingServiceSid);
+            Debug.WriteLine("Num Segments: " + sentMessage.NumSegments);
+            Debug.WriteLine("Price: " + sentMessage.Price);
+            Debug.WriteLine("PriceUnit: " + sentMessage.PriceUnit);
+            Debug.WriteLine("Status: " + sentMessage.Status);
+            for (int x = 0; x < sentMessage.SubresourceUris.Count; x++)
+            {
+                Debug.WriteLine("Subresource Uri key: {0} value: {1}", sentMessage.SubresourceUris.Keys.ElementAt(x),
+                                     sentMessage.SubresourceUris[sentMessage.SubresourceUris.Keys.ElementAt(x)]);
+            }
+            Debug.WriteLine("To: " + sentMessage.To);
+            Debug.WriteLine("Uri: " + sentMessage.Uri);
         }
 
         private async void RelayMessageToChat(SmsRequest request)
