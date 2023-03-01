@@ -12,6 +12,12 @@ using Task = System.Threading.Tasks.Task;
 using IdentityModel.Client;
 using Microsoft.AspNetCore.SignalR.Client;
 using System.Net.Http.Json;
+using NuGet.Protocol.Plugins;
+using static Twilio.Rest.Api.V2010.Account.MessageResource;
+using System.Collections.Generic;
+using Twilio.TwiML.Messaging;
+using Twilio.TwiML.Voice;
+using Twilio.Types;
 
 namespace BreeceWorks.TwilioCoreWebApi.Controllers
 {
@@ -40,43 +46,48 @@ namespace BreeceWorks.TwilioCoreWebApi.Controllers
 
             MessageResource sentMessage = MessageResource.Create(
                 body: message,
-                from: new Twilio.Types.PhoneNumber(fromNumber),
-                to: new Twilio.Types.PhoneNumber(toNmber),
-            statusCallback: new Uri(_configuration["Twilio:StatusCallbackUrl"])
+            from: new Twilio.Types.PhoneNumber(fromNumber),
+            to: new Twilio.Types.PhoneNumber(toNmber),
+            statusCallback: new Uri(_configuration["Twilio:StatusCallbackUrl"]),
+            pathAccountSid : null, 
+            messagingServiceSid : null, 
+            mediaUrl : null, 
+            applicationSid : null, 
+            maxPrice : null, 
+            provideFeedback : null, 
+            attempt : null, 
+            validityPeriod : null, 
+            forceDelivery : null, 
+            contentRetention : null, 
+            addressRetention : null, 
+            smartEncoded : null, 
+            persistentAction : null, 
+            shortenUrls : null, 
+            scheduleType : null, 
+            sendAt : null, 
+            sendAsMms : null, 
+            contentSid : null, 
+            contentVariables : null
             );
-
             LogMessageResource("Outgoing", sentMessage);
         }
-
-        
-
         private const string SavePath = @"\App_Data\";
-
         [HttpPost(Name = "Incoming")]
         [ValidateTwilioRequest]
         public async Task<TwiMLResult> Incoming([FromForm] SmsRequest request, [FromForm] int numMedia)
         {
             LogSMSRequest("SMS Incoming", request);
             await SaveImages(numMedia);
-
             var response = new MessagingResponse();
-
             RelayMessageToChat(request);
-
             return TwiML(response);
         }
-
         [HttpPost(Name = "sms_status_callback")]
         [ValidateTwilioRequest]
         public TwiMLResult sms_status_callback([FromForm] SmsRequest request)
         {
-            
             LogSMSRequest("SMS Status Callback", request);
-
             var response = new MessagingResponse();
-
-
-
             return TwiML(response);
         }
 
